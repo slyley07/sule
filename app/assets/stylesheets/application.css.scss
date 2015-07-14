@@ -20,70 +20,84 @@
 @import "base/base"; // BITTERS:: terminal: bitters install
 @import "neat";
 
-#example3{ text-align:center}
+#example3 {
+  text-align: center;
+}
 
 
-#new_capsule{
+#new_capsule {
   h1{
-    color:black;
-
+    color: black;
   }
-  input[type=submit]{
-    margin-bottom:20px;
+
+  input[type=submit] {
+    margin-bottom: 15px;
   }
 }
-body{
+
+body {
   margin: 0;
   padding: 0;
-  .mainWords{
-    width:20%;
-    margin:0 34vw;
-    padding-top:25%;
-    h1{
+
+  .mainWords {
+    width: 20%;
+    margin: 0 34vw;
+    padding-top: 25%;
+
+    h1 {
       text-align: center;
-      margin:auto 0;
+      margin: auto 0;
       color: black;
       font-weight: 200;
       font-size: 36px;
+
+      a{
+        color: black;
+      }
     }
-    hr{
+
+    hr {
       border-top: 2px solid black;
     }
-    p{
-      color:white;
+
+    p {
+      color: white;
       font-size: 24px;
     }
   }
-  .bgimg{
+
+  .bgimg {
     z-index: 9999;
     //background-image:url('https://allthingscountrymusic.files.wordpress.com/2013/11/clock_gears_wallp_long_goodbye_high_resolution_desktop_1600x1290_hd-wallpaper-891659.png');
   }
   .yield {
-    width:1040px;
+    width: 1040px;
     //background-color: rgba(0, 0, 0, 0.5);
-    border-radius:5px;
-    min-height:100vh;
-    padding-top:50px;
-    margin:0 auto;
-    h2{
-      color:black;
-      font-size:24px;
+    border-radius: 5px;
+    min-height: 100vh;
+    padding-top: 50px;
+    margin: 0 auto;
+
+    h2 {
+      color: black;
+      font-size: 24px;
       text-align: center;
     }
-    h3{
-      color:black;
-      padding-top:10px;
+
+    h3 {
+      color: black;
+      padding-top: 10px;
     }
-    
+
     .newCapsule {
       width: 1040px;
       margin: 0 auto;
 
       .capsuleNew {
         margin: 10px;
-        h1{
-          color:black;
-          text-align:center;
+        h1 {
+          color: black;
+          text-align: center;
         }
       }
 
@@ -91,24 +105,24 @@ body{
         margin: 10px;
       }
     }
-    
+
     .show {
       margin:0 auto;
       margin-bottom:0;
       width:100%;
       background-color: #f7f7f7;
       border-radius:5px;
-      
+
       .dateTime{
         padding:5px;
         text-align: center;
         font-size: 3em;
       }
-      
+
       .submits {
         width: 90%;
         margin: 0 auto;
-        
+
         h1 {
           font-size: 2em;
           text-align: center;
@@ -127,11 +141,11 @@ body{
           }
 
           label {
-              text-align:center;
-              font-size: 40px;
-            }
+            text-align:center;
+            font-size: 40px;
+          }
         }
-        
+
         .postSubmit {
           display: inline-block;
           border: 1px solid #A9A9A9;
@@ -207,12 +221,12 @@ body{
       line-height: $dropdown-height;
       margin: 0;
       padding: 0 ($dropdown-padding / 2) 0 $dropdown-padding;
-      
-      i{
+
+      i {
         color:black;
         font-size:16px;
       }
-      
+
       @include media($large-screen) {
         font-size: 1em;
       }
@@ -228,9 +242,9 @@ body{
       padding: 0 ($dropdown-padding * 2.5) 0 ($dropdown-padding / 2);
       position: relative;
       border-radius: 1px;
-      
-      img{
-        padding-top:7px;
+
+      img {
+        padding-top: 7px;
       }
 
       @include media($large-screen) {
@@ -286,8 +300,8 @@ body{
       color: $dropdown-color;
       list-style: none;
       padding: $dropdown-padding / 2;
-      
-      a{
+
+      a {
         color: black;
       }
     }
@@ -319,19 +333,23 @@ body{
     font-size: 32px;
     padding-left: 5%;
     display: inline;
+
+    a {
+      color: black;
+    }
   }
 
   nav {
     float: right;
     padding-right: 5%;
-    
+
     ul {
       padding: 0;
-    
+
       li {
         padding-top: 6px;
         display: inline-block;
-    
+
         a {
           color: white;
           font-size: 200;
@@ -344,7 +362,7 @@ body{
 .modal {
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
-  
+
   .modal-content {
     padding-left: 50px;
     padding-right: 50px;
@@ -353,7 +371,7 @@ body{
   h2 {
     text-align: center;
   }
-  
+
   label {
     cursor: pointer;
     font-weight: 200;
@@ -426,12 +444,12 @@ body{
   .modal-trigger {
     font-weight: 200;
     color: #FFFFFF;
-    
+
     &:hover {
       color: darken($action-color, 15%);
     }
 
-    &:visited{
+    &:visited {
       color:#FFFFFF;
     }
 
@@ -442,10 +460,10 @@ body{
   }
 }
 
-.view{
-  min-height:100vh;
-  
-  .image{
+.view {
+  min-height: 100vh;
+
+  .image {
    // background-color: red;
     background-size: cover;
     background-image: url("http://wallarthd.com/wp-content/uploads/2014/09/Beautiful-Clock-Macro-Wallpaper-For-Android.jpg");
@@ -454,64 +472,64 @@ body{
   }
 }
 
-.capsuleform{
-  width:90%;
-  margin:0 auto;
+.capsuleform {
+  width: 90%;
+  margin: 0 auto;
 }
 
-.preview{
+.preview {
   width: 80%;
   height: 400px;
 }
 
-.pic{
+.pic {
   width: 200px;
   height: 200px;
 }
-.user_edit{
-  margin:0 auto;
-  margin-bottom:0;
-  width:90%;
+.user_edit {
+  margin: 0 auto;
+  margin-bottom: 0;
+  width: 90%;
   background-color: #f7f7f7;
-  border-radius:5px;
-  padding:10px;
+  border-radius: 5px;
+  padding: 10px;
 }
 
-@media all and (max-width:700px){
+@media all and (max-width:700px) {
   .flex-boxes{
-    min-width:80vw;
+    min-width: 80vw;
   }
-  .header{
-    height:50px;
-    .dropdown{
-      .dropdown-description{
-        i{
-          font-size:16px;
+  .header {
+    height: 50px;
+    .dropdown {
+      .dropdown-description {
+        i {
+          font-size: 16px;
         }
       }
     }
 
-    h1{
+    h1 {
       font-size: 40px;
     }
-    
-    nav{
-      padding-top: 5px;
-      padding-right:2.5%;
 
-      li{
-        font-size:22px;
+    nav {
+      padding-top: 5px;
+      padding-right: 2.5%;
+
+      li {
+        font-size: 22px;
       }
     }
   }
-  body{
-    .yield{
-      height:100%;
-      h2{
-        padding-top:10px;
+  body {
+    .yield {
+      height: 100%;
+      h2 {
+        padding-top: 10px;
       }
-      padding:10px;
-      padding-top:40px;
+      padding: 10px;
+      padding-top: 40px;
     }
   }
 
@@ -534,12 +552,12 @@ body{
   $large-screen: em(860) !default;
   $grid-items-background: $base-background-color;
   $grid-item-background: desaturate($action-color, 30%);
-  $grid-item-colors: 
-    desaturate($action-color, 30%), 
-    #3581A5, 
+  $grid-item-colors:
+    desaturate($action-color, 30%),
+    #3581A5,
     #5FBEBE,
     #98C79A,
-    #A7A891, 
+    #A7A891,
     #BDCC97,
     #979EA0;
   $grid-item-border-size: 9px;
@@ -549,7 +567,7 @@ body{
   $grid-item-height: 14em;
 
   @include clearfix;
-    
+
   .grid-item {
     @include transition (all 0.2s ease-in-out);
     background: $grid-item-background;
@@ -571,7 +589,8 @@ body{
       @include grid-item-columns($grid-item-columns);
     }
 
-    @for $i from 1 through length($grid-item-colors) { // assign colors from $grid-item-colors list
+    @for $i from 1 through length($grid-item-colors) {
+      // assign colors from $grid-item-colors list
       &:nth-child(#{$i}) {
         $background-from-list: nth($grid-item-colors, $i);
         background-color: $background-from-list;
@@ -605,7 +624,7 @@ body{
       line-height: 1.5em;
       margin: auto;
       color: transparentize($grid-item-color, 0.3);
-      
+
       @include media($medium-screen) {
         max-width: 70%;
       }
@@ -619,7 +638,7 @@ body{
     p {
       @include media($medium-screen) {
         max-width: 60%;
-      }  
+      }
     }
   }
 
@@ -633,8 +652,8 @@ body{
 }
 
 .flex-boxes {
-  a{
-    padding:0 auto;
+  a {
+    padding: 0 auto;
   }
   margin: 0 auto;
   $base-border-radius: 3px !default;
@@ -648,10 +667,10 @@ body{
   $flex-box-gutter: 0.4em;
   $flex-box-width: 18em;
   $flex-box-color: transparentize($base-font-color, 0.3);
-  $flex-box-top-colors: 
-    tomato, 
-    #72BFBF, 
-    #92B1E3, 
+  $flex-box-top-colors:
+    tomato,
+    #72BFBF,
+    #92B1E3,
     #E3D743,
     #CCC,
     #F6C05C;
@@ -680,7 +699,7 @@ body{
       &:nth-child(#{$i}) {
         $color-from-list: nth($flex-box-top-colors, $i);
         border-top: 6px solid $color-from-list;
-        
+
         &:focus,
         &:hover {
           //background-color: transparentize($color-from-list, 0.9);
@@ -716,24 +735,24 @@ body{
 }
 
 .image-gradient-dynamic {
-  $image-gradient-color-top: red; 
+  $image-gradient-color-top: red;
   $transparency-top: 0.9;
-  $image-gradient-color-bottom: green; 
+  $image-gradient-color-bottom: green;
   $transparency-bottom: 0.6;
   $vertical-angle: 0deg;
-  $image-gradient-color-left: teal; 
+  $image-gradient-color-left: teal;
   $transparency-left: 0.8;
-  $image-gradient-color-right: yellow; 
+  $image-gradient-color-right: yellow;
   $transparency-right: 0.8;
   $horizontal-angle: 90deg;
-  
+
   line-height: 0;
   position: relative;
   width: 100%;
 
   img {
    height: auto;
-   left: 0; 
+   left: 0;
    position: relative;
    top: 0;
    width: 100%;
@@ -758,13 +777,13 @@ body{
   }
 
   .overlay {
-    @include linear-gradient($vertical-angle, transparentize($image-gradient-color-top, $transparency-top), 
+    @include linear-gradient($vertical-angle, transparentize($image-gradient-color-top, $transparency-top),
       transparentize($image-gradient-color-bottom, $transparency-bottom));
     display: block;
     @include position(absolute, 0px 0px 0px 0px);
 
     &:after {
-      @include linear-gradient($horizontal-angle, transparentize($image-gradient-color-left, $transparency-left), 
+      @include linear-gradient($horizontal-angle, transparentize($image-gradient-color-left, $transparency-left),
         transparentize($image-gradient-color-right, $transparency-right));
       @include position(absolute, 0px 0px 0px 0px);
       content: '';
@@ -840,16 +859,16 @@ body{
       margin: 0 0 ($base-spacing / 2);
     }
   }
-  
+
   &:focus,
   &:hover {
     //background-color: $card-hover-background;
-    
+
     .card-image img {
       //background: $card-image-hover-background;
       //width: 240px;
     }
-  
+
     .card-header {
       //background-color: $card-hover-background;
     }

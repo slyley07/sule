@@ -21,5 +21,4 @@ class ImagesController < ApplicationController
     @image = Image.find(params[:id])
     @image.destroy
   end
-
 end

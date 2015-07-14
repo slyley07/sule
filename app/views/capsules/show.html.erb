@@ -20,11 +20,11 @@
 					<h1>
 						<%= t.title %>
 					</h1>
-					
+
 					<p>
 						<%= t.body %>
 					</p>
-					
+
 					<p>
 						<%= "#{t.created_at.month}/#{t.created_at.day}/#{t.created_at.year}" %>
 					</p>
@@ -41,7 +41,7 @@
 				</a>
 
 			<% end %>
-			
+
 			<% if @capsule.video? %>
 				<a href="javascript:void(0)" class="grid-item grid-item-big">
 					<%= video_tag @capsule.video_url.to_s %>
@@ -50,12 +50,12 @@
 		</div>
 	<% end %>
 
-	<% if @capsule.user == current_user %>
+	<% if @capsule.user == current_user && @capsule.release_date > Time.now %>
 		<div class="submits">
 			<h1>
 				Add a memory to the time capsule
 			</h1>
-				
+
 			<div class="mediaSubmit">
 				<%= form_for [@capsule, @image], :html => {:multipart => true}, class: 'newMedia' do |f| %>
 					<!-- <fieldset> -->
@@ -63,18 +63,18 @@
 						<%= f.label :name, "Captured memory" %>
 					</h2>
 
-					
+
 					<p class="image field">
 						<%= f.file_field :image %>
 					</p>
 
 					<div class="photoSubmit">
-						<%= f.submit %>	
+						<%= f.submit %>
 					</div>
 					<!-- </fieldset> -->
 				<% end %>
 			</div>
-			
+
 			<div class="postSubmit">
 				<%= form_for [@capsule, @post] do |f| %>
 					<% if @post.errors.any? %>
@@ -89,11 +89,11 @@
 				  <!--   <fieldset class = 'firstquestion'> -->
 					    <div class="wy-control-group">
 					    	<%= f.label :body, 'Submit a memory' %>
-					      
+
 					      <%= f.text_area :body, placeholder: 'Write about something that happened today, add a photo or even a video' %>
-					      
+
 					      <%= f.hidden_field :unique, value: 1 %>
-					      
+
 					      <%= f.submit 'Submit',  :onclick => "ReplaceForm()" %>
 					    </div>
 				    <!-- </fieldset> -->
